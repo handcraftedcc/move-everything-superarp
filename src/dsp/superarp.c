@@ -1268,7 +1268,7 @@ static int handle_transport_stop(superarp_instance_t *inst,
 
     /* Explicitly flush tracked voices too (for recipients that ignore CC123). */
     if (inst->voice_count > 0 && count < max_out) {
-        (void)flush_all_voices(inst, out_msgs + count, out_lens + count, max_out - count, &count);
+        (void)flush_all_voices(inst, out_msgs, out_lens, max_out, &count);
     }
 
     /* Clear held/latch state so phrase does not keep running after transport stop. */
