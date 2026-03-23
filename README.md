@@ -1,10 +1,10 @@
-# Super Arp Module for Move Everything
+# Super Arp Module for Schwung
 
-Advanced MIDI arpeggiator module for Ableton Move, built for Move Everything.
+Advanced MIDI arpeggiator module for Ableton Move, built for Schwung.
 
 ## Features
 
-Super Arp is a chainable MIDI FX module (`midi_fx`) for Move Everything. It turns held notes into deterministic or randomized arpeggiated phrases, with independent control over timing, note order, rhythm, and variation.
+Super Arp is a chainable MIDI FX module (`midi_fx`) for Schwung. It turns held notes into deterministic or randomized arpeggiated phrases, with independent control over timing, note order, rhythm, and variation.
 
 - Internal clock or external MIDI clock sync
 - Rate, triplet, swing, gate, velocity override, and latch controls
@@ -19,7 +19,7 @@ Super Arp is a chainable MIDI FX module (`midi_fx`) for Move Everything. It turn
 
 ## Prerequisites
 
-- [Move Everything](https://github.com/charlesvestal/move-anything) installed on your Ableton Move
+- [Schwung](https://github.com/charlesvestal/move-anything) installed on your Ableton Move
 - SSH access enabled: http://move.local/development/ssh
 
 ## Installation
@@ -28,7 +28,7 @@ Super Arp is a chainable MIDI FX module (`midi_fx`) for Move Everything. It turn
 
 If Super Arp is published in Module Store:
 
-1. Launch Move Everything on your Move
+1. Launch Schwung on your Move
 2. Select **Module Store**
 3. Navigate to **MIDI FX** -> **Super Arp**
 4. Select **Install**
@@ -140,7 +140,7 @@ Modifiers add deterministic variation on top of selected notes. Each modifier ha
 - Check `triplet` and `swing` settings
 
 **Need debug logs:**
-- This build writes debug logs to `/data/UserData/move-anything/superarp.log`
+- This build writes debug logs to `/data/UserData/schwung/superarp.log`
 
 ## Building from Source
 
@@ -155,12 +155,12 @@ The build script supports local cross-compilers or Docker and outputs:
 
 ## Credits
 
-- Move Everything framework and host APIs: Charles Vestal and contributors
+- Schwung framework and host APIs: Charles Vestal and contributors
 - Super Arp implementation: move-anything-superarp project contributors
 
 ## AI Assistance Disclaimer
 
-This module is part of Move Everything and was developed with AI assistance, including Claude, Codex, and other AI assistants.
+This module is part of Schwung and was developed with AI assistance, including Claude, Codex, and other AI assistants.
 
 All architecture, implementation, and release decisions are reviewed by human maintainers.  
 AI-assisted content may still contain errors, so please validate functionality, security, and license compatibility before production use.
