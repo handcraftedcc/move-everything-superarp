@@ -17,17 +17,25 @@
             { "label": "Progression", "level": "progression" },
             { "label": "Rhythm", "level": "rhythm" },
             { "label": "Modifiers", "level": "modifiers" }
-          ],
+          ,
+            { "key": "random_octave_amount", "short_name": "Rand" },
+            { "key": "random_note_amount", "short_name": "Note" }],
           "knobs": ["latch", "gate", "velocity", "drop_amount", "gate_random_amount", "velocity_random_amount", "random_octave_amount", "random_note_amount"]
         },
         "global": {
           "name": "Global",
-          "params": ["latch", "max_voices", "rate", "triplet", "swing", "gate", "velocity", "octave_range", "sync", "bpm"],
+          "params": ["latch", "max_voices", "rate", "triplet", "swing", "gate", "velocity", "octave_range", "sync", "bpm",
+        { "key": "max_voices", "short_name": "Voices" }],
           "knobs": ["latch", "max_voices", "rate", "triplet", "swing", "gate", "velocity", "octave_range"]
         },
         "progression": {
           "name": "Progression",
-          "params": ["progression_mode", "pattern_preset", "progression_trigger", "missing_note_policy", "progression_seed", "random_pattern_length", "random_pattern_chords", "random_pattern_chord_seed"],
+          "params": ["progression_mode", "pattern_preset", "progression_trigger", "missing_note_policy", "progression_seed", "random_pattern_length", "random_pattern_chords", "random_pattern_chord_seed",
+        { "key": "missing_note_policy", "short_name": "Policy" },
+        { "key": "progression_seed", "short_name": "Seed" },
+        { "key": "random_pattern_length", "short_name": "Length" },
+        { "key": "random_pattern_chords", "short_name": "Chords" },
+        { "key": "random_pattern_chord_seed", "short_name": "Ch" }],
           "knobs": ["progression_mode", "pattern_preset", "progression_trigger", "missing_note_policy", "progression_seed", "random_pattern_length", "random_pattern_chords", "random_pattern_chord_seed"]
         },
         "rhythm": {
@@ -37,7 +45,12 @@
         },
         "modifiers": {
           "name": "Modifiers",
-          "params": ["modifier_loop_length", "modifier_trigger", "drop_amount", "drop_seed", "velocity_random_amount", "velocity_seed", "gate_random_amount", "gate_seed", "random_octave_amount", "random_octave_range", "random_octave_seed", "random_note_amount", "random_note_seed"],
+          "params": ["modifier_loop_length", "modifier_trigger", "drop_amount", "drop_seed", "velocity_random_amount", "velocity_seed", "gate_random_amount", "gate_seed", "random_octave_amount", "random_octave_range", "random_octave_seed", "random_note_amount", "random_note_seed",
+        { "key": "random_octave_amount", "short_name": "Rand" },
+        { "key": "random_note_amount", "short_name": "Note" },
+        { "key": "modifier_loop_length", "short_name": "Loop" },
+        { "key": "drop_seed", "short_name": "Seed" },
+        { "key": "random_octave_range", "short_name": "Range" }],
           "knobs": ["modifier_loop_length", "drop_amount", "drop_seed", "velocity_random_amount", "gate_random_amount", "random_octave_amount", "random_octave_range", "random_note_amount"]
         }
       }
